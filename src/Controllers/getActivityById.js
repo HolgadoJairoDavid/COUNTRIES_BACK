@@ -1,6 +1,6 @@
 const {Activity} = require('../db')
 
-const getActivity = async (req, res) => {
+const getActivityById = async (req, res) => {
     const {id} = req.params
     try {
         const activity = await Activity.findByPk(id)
@@ -10,4 +10,4 @@ const getActivity = async (req, res) => {
     }
 }
 
-module.exports = getActivity
+module.exports = getActivityById

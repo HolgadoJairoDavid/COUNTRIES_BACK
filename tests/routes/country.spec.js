@@ -3,8 +3,8 @@ const { expect } = require('chai');
 const session = require('supertest-session');
 const app = require('../../src/app.js');
 const { Country, conn } = require('../../src/db.js');
-
 const agent = session(app);
+
 const country = {
   name: 'Argentina',
 };
